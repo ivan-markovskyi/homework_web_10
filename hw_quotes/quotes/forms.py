@@ -8,7 +8,8 @@ class QuoteForm(ModelForm):
 
     class Meta:
         model = Quote
-        fields = ["quote", "tag"]
+        fields = ["quote"]
+        exclude = ["tag"]
 
 
 class AuthorForm(ModelForm):
